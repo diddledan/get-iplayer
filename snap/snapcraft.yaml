@@ -15,6 +15,7 @@ apps:
       - network
       - removable-media
       - home
+      - opengl
   get-iplayer-cgi:
     command: launcher $SNAP/get_iplayer.cgi --getiplayer $SNAP/get_iplayer --ffmpeg $SNAP/usr/bin/ffmpeg --port 1935
     plugs:
@@ -62,3 +63,4 @@ parts:
         - ffmpeg
         - libdb5.3
         - libpulse0
+        - libglu1-mesa
